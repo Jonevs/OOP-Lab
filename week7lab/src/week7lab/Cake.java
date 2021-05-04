@@ -1,18 +1,20 @@
 //JONATHAN EVAN SAMPURNA (2301876612) - OOP Lab Week 7
-package weeklab7;
+package week7lab;
 
-public class cake {
+public class Cake {
     String flavor, topping;
     int flour, sugar = 100;
     boolean isBaked = false;
     
-    cake(String iFlavor, int iFlour, String iTopping) {
+    Cake(String iFlavor, int iFlour, String iTopping)
+    {
         this.flavor = iFlavor;
         this.flour = iFlour;
         this.topping = iTopping;
     }
-
-    public void show() {
+    
+    public void show() 
+    {
         System.out.println("Cake flavor: " + flavor);
         System.out.println("Cake flour: " + flour + " gram");
         System.out.println("Cake sugar: " + sugar + " gram");
@@ -26,11 +28,12 @@ public class cake {
         else
         {
             System.out.println("The cake has not been baked yet");
-        }
-    }    
+        }        
+    }
     
-    public void updateTopping(String newTopping) {
+    public void updateTopping(String newTopping)
+    {
         this.topping = newTopping;
-        System.out.println("The topping is changed!");
+        System.out.println("The topping is changed!");        
     }
 }

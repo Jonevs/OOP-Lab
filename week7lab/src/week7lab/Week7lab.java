@@ -1,24 +1,24 @@
 //JONATHAN EVAN SAMPURNA (2301876612) - OOP Lab Week 7
-package weeklab7;
+package week7lab;
 import java.io.IOException;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Weeklab7 {
+public class Week7lab {
     static Scanner read = new Scanner(System.in);
-    static ArrayList<cake> cakes = new ArrayList<>();
+    static ArrayList<Cake> cakes = new ArrayList<>();
     
-    public static void pressAnyKey() { 
+    public static void pressAnyKey() {
         System.out.print("\nPress any key to continue...");
         try
         {
             System.in.read();
-        }  
+        }
         catch(IOException e)
         {
-
-        }  
-    }    
+            
+        }
+    }
     
     public static void menu() {
         System.out.println("\nHOMEMADE CAKE\n=============");
@@ -26,7 +26,7 @@ public class Weeklab7 {
                 + "3.Change cake topping\n4.View cake list\n5.Exit");
         System.out.print("Choice: ");
     }
-    
+
     public static void addCake() {
         String iFlavor, iTopping;
         int iFlour;
@@ -165,7 +165,7 @@ public class Weeklab7 {
             }
         }        
         
-    }
+    }  
     
     public static void viewCake() {
         if(cakes.isEmpty())
@@ -182,10 +182,11 @@ public class Weeklab7 {
         }        
         
         pressAnyKey();
-    }
+    }    
     
     public static void main(String[] args) {
         int choice;
+        
         try
         {
             do
@@ -227,7 +228,6 @@ public class Weeklab7 {
         {
             System.out.println("ERROR! Wrong input type");
         }
-
-    }
-    
+    }        
 }
+
