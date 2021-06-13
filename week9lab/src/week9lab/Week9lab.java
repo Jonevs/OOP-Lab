@@ -151,6 +151,7 @@ public class Week9lab {
                 System.out.printf("+ %2d. | %-16s| %-8s | %-10s | %-6s |\n",i+1,animals.get(i).getName()
                         ,animals.get(i).getGenus(),animals.get(i).getMood(),animals.get(i).getGender());
             }
+            
         }   
         
         System.out.println("+========================================================+");
